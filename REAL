@@ -1,0 +1,33 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("youtube sim classic") -- Creates the window
+
+local b = w:CreateFolder("main") -- Creates the folder(U will put here your buttons,etc)
+
+b:Label("your sus!!!!",{
+	TextSize = 30; -- Self Explaining
+	TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+	BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+
+}) 
+
+b:Button("autofarm, hold phone" ,function()
+	while true do
+		game:GetService("ReplicatedStorage").fileMade:FireServer()
+		wait()
+	end
+end)
+
+b:Button("test (prints something)" ,function()
+	print("your sus")
+end)
+
+b:Button("exit" ,function()
+	game.Players.LocalPlayer:Kick("success you left the game")
+end)
+
+
+
+
+
+
